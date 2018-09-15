@@ -1,5 +1,4 @@
-# This file helps you to automate the Installation of R1Soft Agent
-# into CentOS6, CentOS7, Fedora, Debian and Ubuntu machines. 
+# This file helps you to automate the Installation of R1Soft Agent into CentOS6, CentOS7, Fedora, Debian and Ubuntu machines.
 ---
   - name: R1Soft Installation on CentOS6-7, Debian, Ubuntu and Fedora
     hosts: r1soft
