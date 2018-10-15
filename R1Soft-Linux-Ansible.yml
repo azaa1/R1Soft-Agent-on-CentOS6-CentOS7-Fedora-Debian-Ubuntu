@@ -29,7 +29,7 @@
 # Getting the key from R1Soft Server
     - name: Get Key From server
       when: ansible_os_family == "RedHat"
-      command: "r1soft-setup --get-key http://104.248.112.47:8080"  # <-- R1Soft Server (Change it to your server's IP)
+      command: "r1soft-setup --get-key http://ser_vers_IP"  # <-- R1Soft Server (Change it to your server's IP)
 
 # Restarting R1Soft Agent on Fedora
     - name: Restart R1Soft Agent
@@ -86,4 +86,4 @@
 # Getting Key from R1Soft Server
     - name: Get Key From Server
       when: (ansible_distribution == "Debian" or ansible_distribution == "Ubuntu" )
-      command: "r1soft-setup --get-key http://104.248.112.47:8080"  #<--- R1Soft Server (Change to your server's IP)
+      command: "r1soft-setup --get-key http://ser_vers_IP:8080"  #<--- R1Soft Server (Change to your server's IP)
